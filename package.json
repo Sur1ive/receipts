@@ -1,6 +1,6 @@
 {
   "name": "receipts-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lie detector for coding agents. Audit your Claude Code sessions for 'all tests pass' claims that were never backed by a passing run.",
   "type": "module",
   "bin": { "receipts": "cli/receipts.mjs" },

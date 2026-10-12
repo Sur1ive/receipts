@@ -4,9 +4,10 @@
   "owner": { "name": "Sur1ive", "url": "https://github.com/Sur1ive" },
   "plugins": [
     {
-      "name": "receipts",
+      "name": "agent-receipts",
       "source": "./",
       "description": "A lie detector for coding agents. Blocks 'all tests pass' / 'fixed' / 'build succeeds' unless the agent actually ran the check after its last change and it passed."
     }
-  ]
+  ],
+  "renames": { "receipts": "agent-receipts" }
 }

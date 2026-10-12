@@ -84,15 +84,15 @@ Receipts
 
 ```
 /plugin marketplace add Sur1ive/receipts
-/plugin install receipts@receipts
+/plugin install agent-receipts@receipts
 ```
 
 重启会话即可。需要 PATH 里有 `node` ≥ 18。零依赖，数据不离开你的电脑。
 
 同时附带两个 skill：
 
-- **`/receipts:receipts-audit`**：交叉质询。Agent 列出本次会话里自己做过的每一条声明，在当前代码上重新跑一遍对应的检查，再用 `git diff` 看测试文件有没有被动过手脚，最后给出 ✓ 成立 / ✗ 被推翻 / ! 篡改。提交代码前用一下。
-- **`/receipts:receipts`**：完整的证据规则，Agent 汇报结果时自动加载。
+- **`/agent-receipts:receipts-audit`**：交叉质询。Agent 列出本次会话里自己做过的每一条声明，在当前代码上重新跑一遍对应的检查，再用 `git diff` 看测试文件有没有被动过手脚，最后给出 ✓ 成立 / ✗ 被推翻 / ! 篡改。提交代码前用一下。
+- **`/agent-receipts:receipts`**：完整的证据规则，Agent 汇报结果时自动加载。
 
 ### Codex、Cursor、Copilot、Gemini CLI、OpenCode、Windsurf、Aider……
 

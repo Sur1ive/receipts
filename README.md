@@ -84,15 +84,15 @@ Honest gaps always pass. **receipts never asks the agent to run everything. It a
 
 ```
 /plugin marketplace add Sur1ive/receipts
-/plugin install receipts@receipts
+/plugin install agent-receipts@receipts
 ```
 
 Restart the session. That's it. Requires `node` ≥ 18 on your PATH. Zero dependencies, nothing leaves your machine.
 
 You also get two skills:
 
-- **`/receipts:receipts-audit`**: cross-examination. The agent lists every claim it made this session, re-runs the check behind each one against the current tree, and checks `git diff` on your test files for tampering. Then it reports ✓ HOLDS / ✗ CONTRADICTED / ! TAMPERING. Use it before you commit.
-- **`/receipts:receipts`**: the full evidence rules, loaded when the agent is about to report results.
+- **`/agent-receipts:receipts-audit`**: cross-examination. The agent lists every claim it made this session, re-runs the check behind each one against the current tree, and checks `git diff` on your test files for tampering. Then it reports ✓ HOLDS / ✗ CONTRADICTED / ! TAMPERING. Use it before you commit.
+- **`/agent-receipts:receipts`**: the full evidence rules, loaded when the agent is about to report results.
 
 ### Codex, Cursor, Copilot, Gemini CLI, OpenCode, Windsurf, Aider…
 
