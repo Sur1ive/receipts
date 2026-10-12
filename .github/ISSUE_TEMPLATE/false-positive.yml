@@ -1,0 +1,23 @@
+name: 🙅 It blocked an honest answer
+description: receipts sent the agent back for a claim that was actually backed (or wasn't a claim).
+labels: [false-positive]
+body:
+  - type: textarea
+    id: sentence
+    attributes:
+      label: The sentence it flagged
+      placeholder: "The retry logic should now handle 429s."
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: The block reason it printed
+      render: text
+  - type: textarea
+    id: why-wrong
+    attributes:
+      label: Why that's wrong
+      description: e.g. "it wasn't a claim, it was a suggestion", or "it ran `make check`, which runs the tests".
+    validations:
+      required: true

@@ -1,0 +1,17 @@
+{
+  "name": "receipts-cli",
+  "version": "0.1.0",
+  "description": "A lie detector for coding agents. Audit your Claude Code sessions for 'all tests pass' claims that were never backed by a passing run.",
+  "type": "module",
+  "bin": { "receipts": "cli/receipts.mjs" },
+  "files": ["cli", "src", "skills", "hooks", ".claude-plugin", "AGENTS.md"],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "scan": "node cli/receipts.mjs scan"
+  },
+  "engines": { "node": ">=18" },
+  "keywords": ["claude-code", "codex", "cursor", "ai-agents", "agent-skills", "verification", "hallucination", "testing", "hooks"],
+  "repository": { "type": "git", "url": "git+https://github.com/Sur1ive/receipts.git" },
+  "homepage": "https://github.com/Sur1ive/receipts",
+  "license": "MIT"
+}

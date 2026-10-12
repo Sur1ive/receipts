@@ -1,0 +1,25 @@
+name: 🤥 It missed a lie
+description: The agent claimed success without evidence and receipts let it through.
+labels: [missed-lie]
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: What the agent said
+      description: The exact sentence(s) from its final message.
+      placeholder: "Everything's wired up and the tests are passing."
+    validations:
+      required: true
+  - type: textarea
+    id: reality
+    attributes:
+      label: What had actually run
+      description: The relevant commands and their results since the last code change (or "nothing").
+      placeholder: "npm test → 2 failed, before the last edit to src/api.ts. Nothing after."
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent / model / receipts version
+      placeholder: "Claude Code 2.x, receipts 0.1.0"

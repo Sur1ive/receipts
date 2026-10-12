@@ -1,0 +1,11 @@
+{
+  "name": "receipts",
+  "displayName": "receipts",
+  "version": "0.1.0",
+  "description": "A lie detector for coding agents. Your agent can't say 'all tests pass' unless it actually ran them, after its last change, and they passed.",
+  "author": { "name": "Sur1ive", "url": "https://github.com/Sur1ive" },
+  "homepage": "https://github.com/Sur1ive/receipts",
+  "repository": "https://github.com/Sur1ive/receipts",
+  "license": "MIT",
+  "keywords": ["verification", "testing", "hallucination", "honesty", "hooks", "agent-skills"]
+}
